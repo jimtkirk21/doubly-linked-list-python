@@ -1,0 +1,74 @@
+# Byte-compiled / optimized / DLL files
+echo '__pycache__/' >> .gitignore
+echo '*.py[cod]' >> .gitignore
+echo '*$py.class' >> .gitignore
+
+# C extensions
+echo '*.so' >> .gitignore
+
+# Distribution / packaging
+echo '.Python' >> .gitignore
+echo 'build/' >> .gitignore
+echo 'develop-eggs/' >> .gitignore
+echo 'dist/' >> .gitignore
+echo 'downloads/' >> .gitignore
+echo 'eggs/' >> .gitignore
+echo '.eggs/' >> .gitignore
+echo 'lib/' >> .gitignore
+echo 'lib64/' >> .gitignore
+echo 'parts/' >> .gitignore
+echo 'sdist/' >> .gitignore
+echo 'var/' >> .gitignore
+echo '*.egg-info/' >> .gitignore
+echo '.installed.cfg' >> .gitignore
+echo '*.egg' >> .gitignore
+
+# PyInstaller
+echo '*.manifest' >> .gitignore
+echo '*.spec' >> .gitignore
+
+# Installer logs
+echo 'pip-log.txt' >> .gitignore
+echo 'pip-delete-this-directory.txt' >> .gitignore
+
+# Unit test / coverage reports
+echo 'htmlcov/' >> .gitignore
+echo '.tox/' >> .gitignore
+echo '.nox/' >> .gitignore
+echo '.coverage' >> .gitignore
+echo '.coverage.*' >> .gitignore
+echo '.cache' >> .gitignore
+echo 'nosetests.xml' >> .gitignore
+echo 'coverage.xml' >> .gitignore
+echo '*.cover' >> .gitignore
+echo '*.py,cover' >> .gitignore
+echo '.hypothesis/' >> .gitignore
+
+# pytest
+echo '.cache/' >> .gitignore
+echo '.pytest_cache/' >> .gitignore
+
+# mypy
+echo '.mypy_cache/' >> .gitignore
+echo '.dmypy.json' >> .gitignore
+echo 'dmypy.json' >> .gitignore
+
+# Pyre type checker
+echo '.pyre/' >> .gitignore
+
+# Cython debug symbols
+echo 'cython_debug/' >> .gitignore
+
+# VS Code
+echo '.vscode/' >> .gitignore
+
+# IDE specific
+echo '.idea/' >> .gitignore
+echo '*.sublime-project' >> .gitignore
+echo '*.sublime-workspace' >> .gitignore
+
+# Mac OS
+echo '.DS_Store' >> .gitignore
+
+# Jupyter Notebook checkpoints
+echo '.ipynb_checkpoints/' >> .gitignore
