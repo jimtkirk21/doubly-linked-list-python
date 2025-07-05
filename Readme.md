@@ -1,17 +1,6 @@
- Doubly Linked List in Python
+# Doubly Linked List in Python
 
-This repository implements a fully featured **Doubly Linked List** data structure in Python, using clean OOP principles, encapsulation, and thorough unit tests.
-
-## Features
-
-- **Node & DoublyLinkedList classes** with:
-  - `append`, `prepend`, `pop`, `pop_first`
-  - `insert`, `remove`, `reverse`, `reverse_between`
-  - `partition_list`, `is_palindrome`, `swap_pairs`
-  - `find_middle_node`, `find_kth_from_end`, `has_loop`
-  - `remove_duplicates`, `binary_to_decimal`
-- Uses **private attributes** with `@property` getters/setters.
-- Clear, consistent **test cases** for all methods.
+A complete, easy-to-understand implementation of a **Doubly Linked List** in Python, with OOP principles, encapsulation, private attributes, and practical examples for each method.
 
 ---
 
@@ -20,16 +9,21 @@ This repository implements a fully featured **Doubly Linked List** data structur
 ```plaintext
 .
 ├── doubly_linked_list.py   # Core data structure
-├── test_dll.py             # Example usage & tests
+├── test_dll.py             # Usage examples & tests
 ├── README.md               # This file
-└── LICENSE                 # License for open source use
-
-Node Class
+└── LICENSE                 # Open source license
+🚀 Features
+✔️ Node Class
 Each node stores:
 
-- value: The data.
-- next: Pointer to the next node.
-- prev: Pointer to the previous node.
+value: The data.
+
+next: Pointer to the next node.
+
+prev: Pointer to the previous node.
+
+DoublyLinkedList Class
+Below is a breakdown of all available methods, what they do, and how to use them.
 
 Methods & Examples
 
@@ -56,8 +50,6 @@ Methods & Examples
 | 19 | `make_empty()`        | Reset list to empty                 |
 | 20 | `print_list()`        | Display list nicely                 |
 
-Examples
-
 1. append(value)
 Add a new node to the end of the list.
 
@@ -76,6 +68,7 @@ dll.print_list()  # 1 <-> 2 <-> None
 3. pop()
 Remove and return the last node.
 
+
 dll = DoublyLinkedList(1)
 dll.append(2)
 node = dll.pop()
@@ -90,9 +83,9 @@ dll.append(2)
 node = dll.pop_first()
 print(node.value)  # 1
 dll.print_list()   # 2 <-> None
+insert(index, value)
 
-5. insert(index, value)
-Insert a node at a specific index.
+5. Insert a node at a specific index.
 
 dll = DoublyLinkedList(1)
 dll.append(3)
@@ -228,14 +221,18 @@ dll.append(1)
 dll.append(1)
 print(dll.binary_to_decimal())  # 11 in binary => 11 decimal => 3
 
+## How to Run Tests
 
-How to Run Tests
+R1. Clone this repository:
+    ```bash
+    git clone https://ghttps://github.com/jimtkirk21/doubly-linked-list-python.git
+    cd your-repo-name
+    ```
 
-git clone https://github.com/jimtkirk21/doubly-linked-list-python.git
-cd doubly-linked-list
-Run test_dll.py to see examples in action.
-
-python test_dll.py
+2. Run all tests:
+    ```bash
+    python3 test_linked_lists.py
+    ```
 
 License
 This project is licensed under the MIT License — see LICENSE for details.
